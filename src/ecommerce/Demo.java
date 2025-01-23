@@ -20,8 +20,8 @@ public class Demo {
 		
 		List<String> names = Arrays.asList("Alice", "bob", "Charlie", "david");
 		List<String> filteredNames = names.stream()
-			    .filter(name -> name.startsWith("C"));
-?		
+			    .filter(name -> name.startsWith("C"))
+			    .collect(Collectors.toList());
 		System.out.println(filteredNames);
 		
 		
