@@ -1,9 +1,18 @@
 package ecommerce.interfaces;
 
-public class ChasePaymentProcessor {
+public class ChasePaymentProcessor implements PaymentProcessor, PaymentValidator{
 
-	public ChasePaymentProcessor() {
-		// TODO Auto-generated constructor stub
+
+	@Override
+	public void processPayment(PaymentData payment) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	@Override
+	public boolean validatePayment(PaymentData payment) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 }

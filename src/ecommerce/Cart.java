@@ -120,7 +120,7 @@ public class Cart {
 	}
 
 
-	public static class Tax{
+	public static class Tax {
 		private String taxType;
 		private double taxRate;
 		

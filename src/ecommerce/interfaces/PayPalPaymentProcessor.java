@@ -1,9 +1,12 @@
 package ecommerce.interfaces;
 
-public class PayPalPaymentProcessor {
+public class PayPalPaymentProcessor implements PaymentProcessor {
 
-	public PayPalPaymentProcessor() {
-		// TODO Auto-generated constructor stub
+
+	@Override
+	public void processPayment(PaymentData payment) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

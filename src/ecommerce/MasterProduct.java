@@ -1,9 +1,12 @@
 package ecommerce;
 
-public class MasterProduct {
+public class MasterProduct extends Product{
 
-	public MasterProduct() {
-		// TODO Auto-generated constructor stub
+	private boolean isAvailableForLease;
+
+	@Override
+	public boolean isAvailableInStock() {
+		return getRemainingAmountInStock() > 0;
 	}
 
 }

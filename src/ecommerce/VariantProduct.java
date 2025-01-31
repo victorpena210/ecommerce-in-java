@@ -1,9 +1,19 @@
 package ecommerce;
 
-public class VariantProduct {
+public class VariantProduct extends Product{
 
-	public VariantProduct() {
-		// TODO Auto-generated constructor stub
+	private MasterProduct[] variants;
+
+	@Override
+	public boolean isAvailableInStock() {
+		for(MasterProduct masterProduct : variants) {
+			if(masterProduct.isAvailableInStock()) {
+				return true;
+			}
+		}
+		return false;
 	}
+	
+	
 
 }
