@@ -22,14 +22,12 @@ public class LargestInteger {
 		
 		System.out.println("this is an array of numbers: ");
 		System.out.println(arrayNumbers);
-		
+		 
 		Optional<Integer> max = arrayNumbers.stream()
 				.max(Integer::compareTo);
 		
 		System.out.println(max.get());
 
-		
-	
 	}
 
 }
