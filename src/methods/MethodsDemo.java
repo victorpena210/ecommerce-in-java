@@ -30,9 +30,5 @@ public class MethodsDemo {
 	private static void printToConsole(double d) {
 		System.out.println(d);
 	}
-	
-	
-	
-	
 
 }
