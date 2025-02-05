@@ -24,8 +24,6 @@ public class SumDigitsInNumber {
 			sumOfDigits +=Integer.parseInt(digit);
 		}
 		return sumOfDigits;
-	
-		
 	}
 	
 
